@@ -14,7 +14,6 @@ router.post("/", UserController.newUser);
 
 router.patch("/:id([0-9]+)", [checkJwt], UserController.editMovie);
 
-//Delete one user
 router.delete("/:id([0-9]+)", [checkJwt], UserController.deleteMovie);
 
 export default router;
